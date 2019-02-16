@@ -1,0 +1,20 @@
+language: generic
+
+os:
+  - linux
+  - osx
+
+env:
+  - JULIA_VERSION=0.6    # oldest support
+  - JULIA_VERSION=1.0.0  # test three-digit version
+  - JULIA_VERSION=1.1    # newest support
+  - JULIA_VERSION=nightly
+
+notifications:
+  email: false
+
+before_script:
+  - ./install-julia.sh "$JULIA_VERSION"
+
+script:
+  - julia -e "Base.banner()"
