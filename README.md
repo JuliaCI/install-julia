@@ -1,3 +1,3 @@
-# Julia installer shell script for CI
+This repository is deprecated.
 
-[![Build Status](https://travis-ci.org/JuliaCI/install-julia.svg?branch=master)](https://travis-ci.org/JuliaCI/install-julia)
+If you are using GitHub Actions CI, and you want to install Julia inside CI, see: [`julia-actions/setup-julia`](https://github.com/julia-actions/setup-julia)
